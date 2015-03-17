@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace Playground
 {
-    public class Person
+    class Pet
     {
         public string Name { get; private set; }
-        public int Age { get; private set; }
+        public string Species { get; private set; }
 
-        public Person(string name, int age)
+        public Pet(string name, string species)
         {
             Name = name;
-            Age = age;
+            Species = species;
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

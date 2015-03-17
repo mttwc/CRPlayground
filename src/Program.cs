@@ -10,8 +10,8 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            var person = new Person("matthew", 23);
-            Console.WriteLine("Hello " + person.Name + "!");
+            var pet = new Pet("Dinky", "German Shepherd");
+            Console.WriteLine("Hello " + pet.Name + "! You're a cute " + pet.Species + "!");
 
             Console.Read();
         }
